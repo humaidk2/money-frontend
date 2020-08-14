@@ -231,9 +231,15 @@ h3 {
   color: #fff;
 }
 
-.profilepic {
+/* .profilepic {
   border-radius: 50%;
   height: 130px;
   margin: -5px 0 10px 0;
+  vertical-align: top;
+} */
+.profile-pic svg {
+  border-radius: 50%;
+  height: 130px;
+  /* margin: -5px 0 10px 0; */
   vertical-align: top;
 }

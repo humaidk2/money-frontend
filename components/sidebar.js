@@ -1,10 +1,13 @@
 import Link from "next/link";
 import * as actions from "../actions/auth";
 import { connect } from "react-redux";
-import { AvatarGenerator } from "random-avatar-generator";
 import { GoogleLogout } from "react-google-login";
+import { AvatarGenerator } from "./randomOptionsGenerator";
+import Avatar from "avataaars";
 const Sidebar = ({ username, logout, logoutGoogle, isGoogleLoggedIn }) => {
   const generator = new AvatarGenerator();
+  const options = generator.generateRandomOptions(username);
+  options.displayingImg = true;
   const onLogout = (evt) => {
     evt.preventDefault();
     logout();
@@ -17,11 +20,12 @@ const Sidebar = ({ username, logout, logoutGoogle, isGoogleLoggedIn }) => {
       <li className="sidebar-brand">
         <a href="#">Money.io</a>
       </li>
-      <li>
-        <img
+      <li className="profile-pic">
+        <Avatar
+          style={{ width: "124px" }}
           className="profilepic"
-          src={generator.generateRandomAvatar(username)}
-        ></img>
+          {...options}
+        />
       </li>
       <li>
         <p className="username">{username}</p>

@@ -9,9 +9,9 @@ import throttle from "lodash/throttle";
 const configureStore = () => {
   const middlewares = [thunk];
   const persistedState = loadState();
-  if (process.env.NODE_ENV) {
-    middlewares.push(logger);
-  }
+  // if (process.env.NODE_ENV) {
+  //   middlewares.push(logger);
+  // }
   const store = createStore(
     rootReducer,
     persistedState,
