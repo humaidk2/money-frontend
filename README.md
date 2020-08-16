@@ -4,7 +4,6 @@ This project is live here [https://money-io.vercel.app](https://money-io.vercel.
 
 Money.io is a financing app that allows users to keep track of their spendings as well as debts and loans.
 
-Users can use
 
 
 ## Table of Contents
