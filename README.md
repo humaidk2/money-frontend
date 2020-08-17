@@ -55,9 +55,14 @@ Authentication is provided using 2 patterns:
 
 ### Libraries
 
+
+### Libraries
+
 Money.IO is built using the following libraries to provide a safe, easy to use
-and easy to maintain user experience.
-1. [Next.js](http://nextjs.org/) which provides faster loads time using server side rendering
+and easy to maintain user and development experience.
+
+Frontend:
+1. [Next.js](https://nextjs.org/) which provides faster loads time using server side rendering
 2. [React.js](https://reactjs.org/) which provides a safer, scalable viewing experience
 , as well as much shorter code using the new React hooks api
 3. [Redux.js](https://redux.js.org/) which stores state in a much more manageable layout
@@ -66,9 +71,28 @@ button based on google's signin recommended practice
 4. [Vercel](https://vercel.com/) which provides a free and easy way to host nextjs apps
 5. [avataaars](https://github.com/fangpenlin/avataaars) which allows for an easy way to generate avataaars
 
+Backend:
+1. [Node.js](https://nodejs.org/en/) which provides javascript runtime bult using V8 to run javascript
+2. [Express.js](https://expressjs.com/) which provides a web application framework to help build a server
+3. [MYSQL](https://www.mysql.com/) which provides a database to store user's information, transactions, and debts
+4. [Passport.js](http://www.passportjs.org/) which provides an authentication framework
+5. [Redis.io](https://redis.io/) which provides a datastore to hold user session data
+6. [passport-local](https://github.com/jaredhanson/passport-local) which provides a local passport strategy to
+start a server-side session on successful authentication
+7. [passport-google-strategy](https://github.com/humaidk2/passport-google-strategy#readme) which provides a google strategy
+to start a server-side session on successful token verification
+8. [Heroku](https://www.heroku.com/) which allows easy deployment through git
+
+
+
 
 ## Team
 
+Project was rewritten by Humaid Khan
+
+[Original Project](https://github.com/humaidk2/Money-io)
+
+original Team:
 - **Product Owner**: Jonathan Wu
 - **Scrum Master**: Humaid Khan
 - **Development Team Members**: Dunstan Zheng, Chris Lu
