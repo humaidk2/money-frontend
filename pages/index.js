@@ -31,6 +31,16 @@ const Home = ({ isLoggedIn, signin, signinGoogle }) => {
       <Head>
         <meta charSet="utf-8" />
         <title>Money.io - Sign In</title>
+        <meta
+          name="description"
+          content="E-wallet application that stores transactions and owings"
+        />
+        <meta
+          name="keywords"
+          content="Money-io, monoey, E-wallet, wallet, tracking, transactions, owings, debts, savings, project"
+        />
+        <meta name="author" content="Humaid Khan" />
+        <meta property="og:image" content="/screenshot.png" />
       </Head>
       <div className="top-content">
         <div className="inner-bg">
